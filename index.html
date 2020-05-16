@@ -204,15 +204,16 @@
 				Оставьте заявку и мы перезвоним вам в течение 15 минут
 			</div>
 			</div>
-			<input type="text" placeholder="Ваше имя*">
-			<input type="text" placeholder="Ваш телефон">
-			<select>
+			<input id="name" type="text" placeholder="Ваше имя*">
+			<input id="phone" type="text" placeholder="Ваш телефон">
+			<select id="uslugi">
+				<option value=" ">Выберите услугу...</option>
 				<option value="Чистка лица">Чистка лица</option>
 				<option value="Массаж-лица">Массаж-лица</option>
 				<option value="КОСМЕТОЛОГИЧЕСКИЙ">КОСМЕТОЛОГИЧЕСКИЙ</option>
 			</select>
 			<div style="margin: 12px 0 0 0">
-					<button class="services">ОТПРАВИТЬ</button>
+					<button  id="send" class="services sendd">ОТПРАВИТЬ</button>
 				</div>
 		</div>
 	</section>
@@ -365,7 +366,14 @@
 			</div>
 		</div>
 	</footer>
-
-	<script src="main.js"></script>
+	<script>
+		let name = document.querySelector('#name');
+		let phone = document.querySelector('#phone');
+		let uslugi = document.querySelector('#uslugi');
+		let send = document.querySelector('.sendd');
+		send.addEventListener('click', function(e) {
+			alert('Имя: ' + name.value + ' Телефон: ' + phone.value)
+		});
+	</script>
 </body>
 </html>
