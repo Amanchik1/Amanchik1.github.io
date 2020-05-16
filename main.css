@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header{
+	height: 100vh;
+	background-color: #000;
+}
+.headerWrapper{
+	margin: 0 50px;
+	height: 100vh;
+	overflow: hidden;
+	background: url('./img/слой.png') center center no-repeat;
+	background-size: cover;
+}
+.logoWrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 25px ;
+	width: 70px;
+	height: 150px;
+}
+.phoneWrapper{
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 25px 65px;
+}
+.logoWrapper>img{
+	/*width: 100%;*/
+	height: 100%;
+}
+
+
+
+/*right navbar */
+.nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 45px;
+	border-left: 1px solid #50504f;
+	color: #fff;
+	text-align: center;
+	justify-content: center; 
+}
+.burger{
+	margin-top: 25px;
+	display: grid; 
+	justify-content: center;
+	cursor: pointer;
+}
+.burger>span{
+	height: 2px;
+	width: 25px;
+	background: #fff;
+}
+
+.links{
+	position: absolute;
+	top: 35%;
+	margin: 7px; 
+}
+.links>img{
+	margin-top: 5px;
+	width: 100%;
+	height: 100%;
+}
+/*right navbar*/
+
+/*footer nav*/
+.footer-nav{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*width: 100vw;*/
+	height: 35px;
+	background: rgba(66, 62, 62, 0.16);
+	color: #fff;
+	display: flex;
+	padding: 0 10%;
+	justify-content: space-between;
+	font-size: 14px;
+	-ms-align-items: center;
+	align-items: center;
+}
+.footer-nav>div{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.footer-nav>div>img{
+	margin-right: 10px;
+}
+
+/*footer nav*/
+
+/*the description in the middle*/
+.description{
+	margin: 15% 20%;
+	width: 450px;
+	color: #fff;
+	text-align: center;
+	margin-right: 300px; 
+}
+.lines{
+	border: 0.5px solid #fff;
+	padding: 10px 0; 
+	border-left: none;
+	border-right: none; 
+	position: relative;
+	margin-bottom: 20px;
+}
+.welcom{	
+	background: #000;
+	margin: -20px 60px 15px 60px;
+}
+.salon{
+	font-family: 'Merriweather', serif;
+	font-size: 45px;
+	margin-bottom: 15px
+}
+.des{
+	margin: 15px 0;
+	font-size: 16px;
+	line-height: 20px
+}
+.about-us{
+	padding: 7px 15px;
+	border-radius: 2px;
+	background: #f9cb62;
+}
+/*the description in the middle*/
+
+
+
+/*section1*/
+
+.section1{
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/*grid-template-rows: 1fr 1fr;*/
+}
+.section1>div{
+	height: 100%;
+}
+.section1>div>img{
+	width: 100%;
+	height: 100%;
+}
+.block{
+	background: #000;
+	width: 100%;
+	display: grid;
+}
+.block>div{
+	display: grid;
+	text-align: center;
+	color: #fff; 
+}
+.block1{
+	background: #66c7cd;
+}
+.block2{
+	background: #f9c766;
+}
+.block3{
+	background: #f86868;
+}
+.imgWrapper{
+	width: 50px;
+	margin: auto;
+}
+.imgWrapper>img{
+	width: 100%;
+	height: 100%;;
+}
+.coin{
+	display: inline-flex;
+	margin-top: 8px;
+	color: #4a4a4a;
+	font-weight: 600;
+}
+.coin>img{
+	margin-left: 10px;
+}
+.services{
+	background: #fff;
+	font-size: 12px;
+	border-radius: 4px;
+	border: 3px solid #e6e6e6;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	padding: 8px 15px 5px 15px;
+}
+.leftArrow, .righArrow{
+	border: none;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;	
+	width: 35px;
+	height: 35px;
+	display: inline-flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.rightArrow{
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 35px;
+	height: 35px;
+}
+.leftArrow>div, .rightArrow>div{
+	display: flex;
+}
+.rightArrow>div>img{
+	margin: 0 auto;
+}
+.leftArrow>div>img, .rightArrow>div>img {
+	width: 40%;
+	height: 40%;
+}
+/*section1*/
+
+
+
+
+/*section 2*/
+
+.section2{
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	background: url('./img/Салон.jpg') center center no-repeat;
+	background-size: cover;	
+}
+.section2>h2{
+	font-weight: 600;
+}
+.sectionWrapper{
+	background: rgba(0, 0, 0, 0.55); 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 4em;
+	padding: 40px 10%;
+}
+.text{
+	display: grid;
+	margin-top: 20px;
+	 
+}
+
+/*section 2*/
+
+
+
+/*section 3*/
+.section3{
+	font-family: "Roboto";
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: #fff;
+}
+
+.women{
+	background: url('./img/девушка на белом фоне.jpg') center center no-repeat;
+	background-size: cover; 
+}
+.formWrapper{
+	background: #facd78; 
+	padding: 15px 35px 80px 35px;
+	display: grid;
+	grid-gap: 1em;
+}
+.formWrapper>input,.formWrapper>select {
+	width: 250px;
+	height: 35px;
+	padding-left: 5px;
+	background: none;
+	border: 1px solid #27212d30;
+}
+.formWrapper>select{
+	width: 256px;
+}
+
+
+/*section 3*/
+
+
+
+
+/*section4*/
+.section4{
+	text-align: center;
+	font-family: "Roboto";
+	color: #fff;
+	background: url('./img/zxsalon.jpg') center center no-repeat; 
+}
+.feedbackWrapper{
+	background: #929292bd; 
+	padding: 25px 0;
+	height: 400px;
+}
+/*карусель из - */
+/*Carousel*/
+.carrousel {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slide h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+.carrousel .slides {
+  width: 400%;
+  left: 0;
+  padding-left: 0;
+  padding-top: 3em;
+  height: 300px;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+}
+.carrousel .slides li {
+  width: 25%;
+  position: relative;
+  float: left;
+}
+.carrousel li p{
+  margin-top: 0;
+  position: relative;
+}
+.carrousel li span {
+  width: 50%;
+  margin: auto;
+  color: #403e3e;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: bold;
+}
+.slide{
+	display: grid;
+	text-align: center;
+	grid-gap: 1.5em; 
+}
+.img1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(5%, 150%)
+}
+
+.img2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(-30%, 150%)
+}
+.carrousel .slidesNavigation {
+  display: block;
+  list-style: none;
+  text-align: center;
+  bottom: 1em;
+  /*--- Centering trick---*/
+    /* Absolute positioning*/
+    position: absolute; 
+    /* Abosulte positioning*/
+    width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%; /*Centering de element*/
+    margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+}
+.carrousel input {
+  display: none;
+}
+.carrousel .slidesNavigation label {
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  font-size: 0;
+}
+/* You have to repeat this with each slide
+TODO: make it easier with SCSS
+25% movement 100/slides-num
+*/
+#radio-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#radio-2:checked ~ .slides {
+  transform: translateX(-25%);
+}
+#radio-3:checked ~ .slides {
+  transform: translateX(-50%);
+}
+#radio-4:checked ~ .slides {
+  transform: translateX(-75%);
+}
+
+
+.carrousel .slidesNavigation label:hover {
+   cursor: pointer;
+}
+/* You have to repeat this with each slide/dot */
+.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+  background: yellow;
+}
+
+@media  (max-width: 796px) {
+  .carrousel{
+    height: 8.5em;
+  }
+}
+@media  (max-width: 480px) {
+  .carrousel li p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .carrousel li q {
+      font-size: 1em;
+  }
+  .carrousel li img {
+     width:2em;
+     margin-left: -1em;
+     margin-right: 0.25em;
+  }
+}
+
+/*section4*/
+
+
+/*section5*/
+.section5{
+	background: url('./img/unnamed.png') center center no-repeat;
+	background-size: cover;
+	font-family: 'Roboto';
+	text-align: center;
+	  
+}
+.section5>div{
+	padding: 60px 15%;
+}
+.partners{
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-gap: 3em;
+}
+
+
+
+/*section5*/
+
+
+
+/*footer*/
+footer{
+	background: #242424;
+	padding: 40px 7%; 
+	color: #fff;
+	font-family: 'Roboto';
+}
+footer>div{
+	display: grid;
+	grid-template-columns: 2fr 3fr 3fr 2.5fr;
+	grid-gap: 1em
+}
+.company{
+	display: grid;
+
+}
+.list-footer{
+	display: grid;
+}
+.list-footer>div{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	/*justify-content: space-around;*/
+}
+.list-footer>div>p{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.address{
+	display: grid;
+	font-size: 14px;
+}
+.address>div{
+	margin: auto 0;
+}
+.address>div>img{
+	margin-right: 15px;
+}
+/*footer*/
