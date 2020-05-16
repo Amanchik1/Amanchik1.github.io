@@ -21,7 +21,7 @@ header{
 	margin: 0 50px;
 	height: 100vh;
 	overflow: hidden;
-	background: url('./img/слой.png') center center no-repeat;
+	background: url('./img/mainBg.jpg') center center no-repeat;
 	background-size: cover;
 }
 .logoWrapper{
